@@ -1,0 +1,22 @@
+    10.99 GFLOPs
+
+   579.37 Weight
+
+    43.91 L1
+    34.12 L2
+    19.02 L3
+    13.09 L4
+    10.34 DRAM
+
+META_DATA
+HOSTNAME  localhost.localdomain
+CONFIG  {'ERT_WORKING_SET_MIN': ['1'], 'ERT_CFLAGS': ['-O3'], 'ERT_CC': ['gcc'], 'ERT_MPI_CFLAGS': [], 'ERT_MPI_LDFLAGS': [], 'ERT_MEMORY_MAX': ['15000000000'], 'ERT_PROCS_THREADS': ['8,10,16'], 'ERT_LDFLAGS': [], 'ERT_LDLIBS': [], 'ERT_SPEC_GBYTES_DRAM': ['0'], 'ERT_RUN': ['export', 'KMP_AFFINITY=scatter;', 'export', 'OMP_NUM_THREADS=ERT_OPENMP_THREADS;', 'ERT_CODE'], 'ERT_FLOPS': ['1,2,4,8,16'], 'ERT_OPENMP_CFLAGS': ['-fopenmp'], 'ERT_SPEC_GFLOPS': ['0'], 'ERT_MPI': ['False'], 'ERT_TRIALS_MIN': ['1'], 'ERT_DRIVER': ['driver1'], 'ERT_RESULTS': ['Results.arm'], 'ERT_OPENMP': ['True'], 'ERT_MPI_PROCS': ['1'], 'ERT_KERNEL': ['kernel1'], 'ERT_OPENMP_THREADS': ['8,10,16'], 'ERT_LD': ['gcc'], 'ERT_NUM_EXPERIMENTS': ['4'], 'ERT_OPENMP_LDFLAGS': ['-fopenmp'], 'ERT_ALIGN': ['32'], 'ERT_GNUPLOT': ['gnuplot']}
+TIMESTAMP_DATA  1614752220.59
+MPI_PROCS      1
+OPENMP_THREADS 10
+UNAME  ('Linux', 'localhost.localdomain', '5.4.44-mlnx.14.gd7fb187', '#1 SMP PREEMPT Tue Sep 15 16:18:01 UTC 2020', 'aarch64', 'aarch64')
+FLOPS          4
+TIMESTAMP_DATA  1614752859.63
+TIMESTAMP_DATA  1614753180.36
+TIMESTAMP_DATA  1614752544.77
+ERT_VERSION  1.0.0
