@@ -1,0 +1,8 @@
+\section{Conclusion}
+\label{sec-conlcu}
+
+In this project, we first talked about \smartnics and a few architectures for them; then, we discussed each architecture has its advantages. However, all of them release resources from the host. So, data center administrators take this advantage to move applications into \smartnic, freeing more resources on the servers for tenants. 
+\par
+Later, we spoke about the importance of neural networks and their popularity in different applications. Focusing on \smartnic, we provided a project explaining some case studies requiring fast latency and lower bandwidth. In the project, the researchers adopted on-path \smartnics having very limited resources. So, they quantized their neural networks to reduce the model size. However, those \smartnics had not supported floating-point operations. Their limitations lead them to use binarized neural networks,  losing accuracy and being compatible with the devices.
+\par
+In this project, we chose an off-path \smartnic which has more resources and supports floating-point operations. Therefore we do not lose accuracy more than 0.05\%. Our results show that ARM-based \smartnics still have limited resources and computation power than the hosts, and they are not a suitable environment for executing complex neural networks such as VGG16. Running VGG16 on our \smartnic takes approximately 5x more time than the host. Conversely, ARM-based \smartnics would be competitive resources for executing simpler neural networks such as MLP classifiers due to their quicker communication time. We were able to offload a workload running on one core of the host to one core of the \smartnic, without any change in the outputs, and still have more space in the \smartnic.

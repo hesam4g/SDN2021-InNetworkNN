@@ -1,0 +1,64 @@
+\documentclass[sigconf]{acmart}
+
+\usepackage[english]{babel}
+ \usepackage{booktabs}
+ \usepackage{graphicx}
+ \usepackage{subcaption}
+ \usepackage{url}
+\usepackage{blindtext}
+\usepackage{dirtytalk}
+\usepackage[linesnumbered]{algorithm2e}
+\newcommand{\etal}{\textit{et al.} }
+\newcommand{\smartnic}{\textit{SmartNIC} }
+\newcommand{\smartnics}{\textit{SmartNICs} }
+\begin{document}
+\title{In depth in-network neural network performance analysis}
+
+%\titlenote{Produces the permission block, and copyright information}
+%\subtitle{Extended Abstract}
+   
+%   \streetaddress{Address}
+%   \city{City} 
+%   \state{State} 
+%   \postcode{Zipcode}
+% }
+% \email{email@domain.com}
+\author{Hesam Tajbakhsh}
+% \authornote{Note}
+\orcid{0002-8100-4323}
+\affiliation{%
+  \institution{Dalhousie University}
+%   \streetaddress{Address}
+  \city{Halifax} 
+  \state{Nova Scotia} 
+%   \postcode{Zipcode}
+}
+\email{hs762129@dal.ca}
+
+
+\begin{abstract}
+\textcolor{red}{[add abstract]}
+
+In this project, we investigate running neural networks on \smartnics without any accuracy loss. Previous works modified their neural networks to be compatible with their \smartnics due to their device's limitation. Our goal is to figure out if we can execute an accurate model on a different \smartnic to release some tasks from the host and gain the same or even better performance.
+\end{abstract}
+
+\maketitle
+
+\input{intro}
+
+\input{back}
+
+\input{motiv}
+
+\input{eval}
+
+\input{results}
+
+\input{related-work}
+
+\input{conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{reference}
+
+\end{document}
